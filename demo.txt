@@ -1,0 +1,348 @@
+Day 2                                                   (08/01/2023 - F.N)
+                                                        
+HTML Basics
+---------------------------------------------------------------------------------------------------------------------------
+HTML 5 Feactures.
+
+		Video - Without plug -in we can embedded the video  
+
+		3D - Can create intracte #D effect
+
+		Audio - Without pliug in we can embedded the audio
+
+		Games - Can create game by using scripting language
+
+		Motion - Object move on web page and react to the movement of the cursor
+
+		TYPE - More fonts, Shadow, color and other effects.
+
+		Storage - Web app works without connecting to the internet.
+
+------------------------------------------------------------------------------------------------------------------------------
+Semantics tags
+
+Were introduced to add meaning to Broweser, Webpage and COde
+
+<Header>  		- Top and cotain logo
+
+<footer>		- Bottom of the page sitemap, contact information
+
+<nav>			- Navigation page
+
+<main>			- Main content of the page
+
+	<section> 	- Chapters, NEWS items , Contact information
+
+	<article>	- Paragraph		
+
+	<aside>    	- Scrolling images , Ads
+
+----------------------------------------------------------------------------------------------------------------------------------
+Other Semantics tags
+
+<detail>
+
+<figcaption>
+
+<figure>
+
+<mark>
+
+<summary>
+
+<time>
+-------------------------------------------------------------------------------------------------------------
+Tags
+
+Figure
+
+<figure><figcaption>
+
+Eg:
+<main>
+<section>
+<figure>
+<img src = "abc.jpg">
+<figure>Content below the image</figcaption>
+</section>
+</main>
+-----------------------------------------------------------------------------------------------------------------
+Description term element
+
+<dt> 	- Description Term
+
+<dl>	- Description List
+
+<dd>	- Description Detail
+
+---------------------------------------
+Eg:
+<!DOCTYP html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title> Description List </title>
+	</head>
+	<body>
+		<dl>
+			<dt>Fruits</dt>
+
+			<dd>Apple</dd>
+			<dd>Orange</dd>
+
+			<dt>Vegetable</dt>
+			
+			<dd>Carrot</dd>
+			<dd>Onion</dd>
+		</dl>
+	</body>
+</html>
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Preformatted
+
+Predefined fixed with the font, line break and spacing
+
+<pre>
+-----------------------------------------------------------------------
+Eg:
+<!DOCTYP html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title> Predefined Tag </title>
+	</head>
+	<body>
+		<pre> Contents 
+		</pre>
+	</body>
+</html>
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Table
+
+ Contains table in the web page
+
+<tr>	 	- Table Row
+<td>		- Table Data
+<th>		- Table headings
+<table border>	- Border of the table
+<caption>	- Table caption above the table
+<colspan>      	- Split the table
+align
+width
+height
+Cellspacing
+cellpadding
+----------------------------------------------------------------------------------
+Eg: Table
+    ------
+<!DOCTYP html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title> Table </title>
+	</head>
+	<body>
+	<table border="2" width="1000" height="200" align="center" cellspacing = "5" cellpadding="20">
+		<tr>
+			<th>Name</th>
+			<th>Age</th>
+			<th>Course</th>
+		</tr>
+		<tr>
+			<td>Arun</td>
+			<td>27</td>
+			<td>BE ECE</td>
+		</tr>
+		<tr>
+			<td>Sakthi</td>
+			<td>22</td>
+			<td>B.Sc</td>
+		</tr>
+		<tr>
+			<td>Praveen</td>
+			<td>25</td>
+			<td>B.Tech</td>
+		</tr>
+		</table>
+		</body>
+</html>
+
+----------------------------------------------------------------------------------------------------------------------
+Eg: Table with Row Split
+    ----------------------
+<!DOCTYP html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title> Table </title>
+	</head>
+	<body bgcolor="pink">
+	<table border="2" width="1000" height="200" align="center" cellspacing = "5" cellpadding="20" bgcolor=white>
+		<tr>
+			<th colspan="2">Name</th>
+			<th>Age</th>
+			<th>Course</th>
+		</tr>
+		<tr>
+			<td>Arun</td>
+            <td>KSM</td>
+			<td>27</td>
+			<td>BE ECE</td>
+		</tr>
+		<tr>
+			<td>Sakthi</td>
+            <td>L</td>
+			<td>22</td>
+			<td>B.Sc</td>
+		</tr>
+		<tr>
+			<td>Praveen</td>
+            <td>M</td>
+			<td>25</td>
+			<td>B.Tech</td>
+		</tr>
+		</table>
+		</body>
+</html>
+-----------------------------------------------------------------------------------------------------------------------------
+Eg: Coloum Split
+    -------------
+<!DOCTYP html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title> Table </title>
+	</head>
+	<body bgcolor="pink">
+	<table border="2" width="1000" height="200" align="center" cellspacing = "5" cellpadding="20" bgcolor=white>
+		<tr>
+			<th>Name</th>
+			<td>Arun</td>
+            <td>Bala</td>
+            <td>Karthik</td>
+			
+		</tr>
+		<tr>
+			<th>Age</th>
+			<td>27</td>
+            <td>20</td>
+            <td>25</td>
+			
+		</tr>
+		<tr>
+			<th rowspan="2"> Mobile number</th>
+			<td>8870********</td>
+            <td>9894********</td>
+            <td>8790********</td>
+			
+		</tr>
+			<tr>
+			
+			<td>123*******</td>
+            <td>456*******</td>
+            <td>789*******</td>
+		</tr>
+
+		</table>
+		</body>
+</html>
+------------------------------------------------------------------------------------------------------------------------------------------
+List
+	->To list out the content either ordered or unordered wise i.e inserting bullets.
+
+Ordered List	- Alphabets,numbers and roman letters.
+<ol> 		- Ordered list
+<li> </li>	- Lisiting the numbers
+---------------------------------------------------
+
+Syntax
+ 		<ol type = "A/a/1/l/i"start="3">
+		</ol>
+----------------------------------------------------
+Unordered List	- Symbols
+		<ul type= "disc/circle/square">
+		</ul>
+-----------------------------------------------------
+Description List
+-----------------------------------------------------
+Highlight
+<mark> Content </mark>
+------------------------------------
+Power
+<sup>Count</sup>
+------------------------------------
+Sufix
+<sub>Count</sub>
+------------------------------------
+Bold
+<strong>Count</strong>
+------------------------------------
+Letters moving
+<marquee direction="right"> Welcome </marquee>
+----------------------------------------------------
+Eg:
+<!DOCTYP html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title> Table </title>
+	</head>
+	<body>
+		<main>
+			<mark> Content </mark><br>
+<h1>HTML Version <sup>4</sup></h1><br>
+-----------------------------------------------------------------------------
+Summary
+	Used to define summary for <detail> element
+	When summary clicked by the user the details will appear.
+	Summary is the child element of the detail.
+	
+<summary>
+<detail>
+------------------------------------
+<body>
+<details>
+	<summary> Content </summary>
+	<p> Content </p>
+----------------------------------------------------
+Eg: Summary and Detail
+
+<!DOCTYP html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title> Table </title>
+	</head>
+	<body>
+		<details>
+			<summary>HTML 5 </summary>
+			<p>
+			<ul>
+				<li> content </li>
+			</ul>
+			</p>
+
+		</body>
+</html>
+-----------------------------------------------------------------------------------------------------------------------
+Anchor <a>
+
+Hyperlink <a> tag is to attach any URL
+
+Eg
+<main>
+<ul>
+	<li><a herf="file name">Summary</a></li>
+	<li><a herf="file name">Summary</a></li>
+	<li><a herf="file name">Summary</a></li>
+</ul>
+
+<ul>
+<hr>
+<nav>
+<a href="file link">file name</a>
+</nav>
+</main>
+
+
